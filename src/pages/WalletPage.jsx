@@ -177,7 +177,7 @@ export default function WalletPage() {
           <h1
             className={`text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 transition-all duration-700 delay-200 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
           >
-            We'll help you get back into your
+            Lost Access to Your Trust Wallet Wallet? We Can Help.
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               {wallet.title} wallet
@@ -265,7 +265,50 @@ export default function WalletPage() {
           </div>
         </div>
       </section>
+      {/* Wallet Specific Content */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              What Happened — and Why It's More Common Than You Think
+            </h2>
 
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              {wallet.happened}
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              How Our Recovery Process Works
+            </h2>
+
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              {wallet.process}
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              What We Need From You
+            </h2>
+
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              {wallet.need}
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              How Long Does Recovery Take?
+            </h2>
+
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              {wallet.timeline}
+            </p>
+          </div>
+        </div>
+      </section>
       {/* Recovery Process */}
       <section className="py-20 px-6 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900/50 dark:to-transparent">
         <div className="max-w-6xl mx-auto">

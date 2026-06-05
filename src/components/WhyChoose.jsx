@@ -14,26 +14,38 @@ function WhyChoose() {
     {
       icon: <FaWallet className="text-blue-500" />,
       name: "Blockchain.com",
-      desc: "One of the most popular online wallets. We can help if you've forgotten your password or lost access to your account.",
+      desc: "One of the world's most widely used online wallets. If you've forgotten your login password or lost access to your account, we know this wallet's architecture well enough to help.",
       color: "from-blue-500 to-blue-600",
     },
     {
       icon: <FaBitcoin className="text-orange-500" />,
       name: "Bitcoin Core",
-      desc: "The original Bitcoin wallet software. We specialize in recovering older Bitcoin Core wallets with forgotten passwords.",
+      desc: "The original Bitcoin wallet software. We have deep experience recovering older Bitcoin Core wallets with forgotten passwords — including wallets that haven't been opened in years.",
       color: "from-orange-500 to-red-500",
     },
     {
       icon: <FaEthereum className="text-purple-500" />,
       name: "MetaMask",
-      desc: "Popular browser extension for Ethereum and NFTs. We can help recover access if you've lost your password or seed phrase.",
+      desc: "The leading browser extension wallet for Ethereum and NFTs. Lost your password or seed phrase? We can help restore access without compromising your funds.",
       color: "from-purple-500 to-pink-500",
     },
     {
       icon: <FaShieldAlt className="text-green-500" />,
       name: "Trust Wallet",
-      desc: "Mobile wallet for multiple cryptocurrencies. We can assist with password recovery and seed phrase issues.",
+      desc: "A popular mobile wallet for managing multiple cryptocurrencies. We assist with both password recovery and seed phrase-related issues.",
       color: "from-green-500 to-emerald-500",
+    },
+    {
+      icon: <FaBitcoin className="text-orange-500" />,
+      name: "Multibit & Multibit HD",
+      desc: "Legacy wallets that many early adopters still hold funds in. We have experience with both versions.",
+      color: "from-orange-500 to-yellow-500",
+    },
+    {
+      icon: <FaWallet className="text-blue-500" />,
+      name: "Electrum, MyEtherWallet, Mist, and More",
+      desc: "Don't see your wallet? We're constantly expanding our support. Reach out and we'll tell you honestly whether we can help.",
+      color: "from-blue-500 to-cyan-500",
     },
   ];
 
@@ -90,18 +102,20 @@ function WhyChoose() {
 
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
             <span className="text-gray-900 dark:text-white">
-              We work with the
+              How We Can Help You
             </span>
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              wallets you use
+              Recover Your Crypto
             </span>
           </h2>
 
           <p className="text-gray-600 dark:text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
-            Whether you've been using crypto for years or just getting started,
-            we can help recover access to your wallet. Here are some of the most
-            common wallets we support.
+            Whether you've forgotten your wallet password or lost your recovery
+            phrase, our team uses specialized offline computers to
+            systematically and securely test password combinations until we find
+            the right one. Most cases are resolved within the first week. We
+            support all major wallets, including:
           </p>
         </div>
 

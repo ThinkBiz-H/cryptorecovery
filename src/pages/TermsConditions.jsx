@@ -23,93 +23,209 @@ function TermsConditions() {
 
   const sections = [
     {
-      title: "Agreement to Terms",
-      icon: <FaFileContract className="text-blue-500" />,
-      content: [
-        "These Terms of Use constitute a legally binding agreement made between you and Crypto Asset Recovery regarding your access to and use of this website and related services.",
-        "By accessing the Site, you agree that you have read, understood, and agreed to all of these Terms.",
-        "If you do not agree with all of these Terms, you are expressly prohibited from using the Site and must discontinue use immediately.",
-      ],
+      id: "who",
+      title: "Who We Are and How to Reach Us",
+      icon: <FaRegBuilding />,
+    },
+    { id: "eligibility", title: "Eligibility", icon: <FaUserCheck /> },
+    { id: "ip", title: "Intellectual Property", icon: <FaShieldAlt /> },
+    {
+      id: "use",
+      title: "Permitted Use and Prohibited Activities",
+      icon: <FaBan />,
     },
     {
-      title: "Intellectual Property Rights",
-      icon: <FaShieldAlt className="text-blue-500" />,
-      content: [
-        "Unless otherwise indicated, the Site and all content, source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics are our proprietary property.",
-        "All trademarks, service marks, and logos are owned by us or our licensors.",
-        "You are granted a limited license to access and use the Site for personal, non-commercial purposes only.",
-      ],
+      id: "feedback",
+      title: "User Submissions and Feedback",
+      icon: <FaFileContract />,
     },
     {
-      title: "User Representations",
-      icon: <FaUserCheck className="text-blue-500" />,
-      content: [
-        "By using the Site, you represent and warrant that:",
-        "You have the legal capacity to comply with these Terms.",
-        "You will not use automated systems like bots or scripts.",
-        "You will not use the Site for illegal or unauthorized purposes.",
-        "Your use of the Site will not violate any laws or regulations.",
-        "You are not a minor in your jurisdiction of residence.",
-      ],
-      isList: true,
+      id: "thirdparty",
+      title: "Third-Party Links and Services",
+      icon: <FaDatabase />,
     },
     {
-      title: "Prohibited Activities",
-      icon: <FaBan className="text-blue-500" />,
-      content: [
-        "Users are prohibited from:",
-        "Collecting data without permission.",
-        "Uploading viruses or malicious software.",
-        "Attempting unauthorized access to the Site.",
-        "Using the Site for fraudulent activities.",
-        "Harassing or threatening other users.",
-        "Circumventing any security features.",
-      ],
-      isList: true,
+      id: "disclaimer",
+      title: "Disclaimer of Warranties",
+      icon: <FaExclamationTriangle />,
+    },
+    { id: "liability", title: "Limitation of Liability", icon: <FaGavel /> },
+    { id: "indemnification", title: "Indemnification", icon: <FaShieldAlt /> },
+    {
+      id: "ads",
+      title: "Advertising and Analytics Tools",
+      icon: <FaDatabase />,
     },
     {
-      title: "Privacy Policy",
-      icon: <FaLock className="text-blue-500" />,
-      content: [
-        "We care about data privacy and security. By using the Site, you agree to be bound by our Privacy Policy.",
-        "All personal data collected through the Site will be handled in accordance with our Privacy Policy.",
-        "Our security measures include air-gapped servers and enterprise-grade encryption.",
-      ],
+      id: "law",
+      title: "Governing Law and Dispute Resolution",
+      icon: <FaGavel />,
     },
     {
-      title: "Disclaimer",
-      icon: <FaExclamationTriangle className="text-blue-500" />,
-      content: [
-        "The Site is provided on an 'AS-IS' and 'AS-AVAILABLE' basis.",
-        "We disclaim all warranties, express or implied, in connection with the Site.",
-        "We do not warrant that the Site will be uninterrupted, secure, or error-free.",
-        "Recovery success rates vary based on individual circumstances.",
-      ],
+      id: "updates",
+      title: "Updates to These Terms",
+      icon: <FaFileContract />,
     },
-    {
-      title: "Limitation of Liability",
-      icon: <FaGavel className="text-blue-500" />,
-      content: [
-        "In no event will we be liable for any indirect, consequential, exemplary, incidental, special, or punitive damages arising from your use of the Site.",
-        "Our total liability shall not exceed the amount paid by you, if any, for accessing the Site.",
-        "Some jurisdictions do not allow the exclusion of certain warranties, so some exclusions may not apply to you.",
-      ],
-    },
-    {
-      title: "Contact Us",
-      icon: <FaEnvelope className="text-blue-500" />,
-      content: [
-        "CryptoAssetRecovery.com, LLC",
-        "5 Ross Rd.",
-        "Durham, NH 03824",
-        "United States",
-        "Email: info@cryptoassetrecovery.com",
-        "Phone: (970) 633-0680",
-      ],
-      isContact: true,
-    },
+    { id: "contact", title: "Contact", icon: <FaEnvelope /> },
   ];
+  const content = {
+    who: (
+      <p>
+        We are CRYPTOASSETRECOVERY.COM, LLC, a registered limited liability
+        company in the State of New Hampshire, United States. Our registered
+        office is at 5 Ross Rd., Durham, NH 03824. You can reach us at
+        info@cryptoassetrecovery.com or by phone at (970) 633-0680. These terms
+        apply to the website and any related media, channels, or services
+        associated with it.
+      </p>
+    ),
 
+    eligibility: (
+      <p>
+        Our services are intended for individuals who are at least 18 years old.
+        By using this site, you represent and warrant that you meet this age
+        requirement, that you have the legal capacity to agree to these terms,
+        and that your use of our services complies with all laws and regulations
+        applicable in your jurisdiction.
+      </p>
+    ),
+
+    ip: (
+      <p>
+        All content on this website — including text, graphics, software, logos,
+        and design — is the proprietary property of CRYPTOASSETRECOVERY.COM, LLC
+        or is licensed to us. You are granted a limited, non-commercial license
+        to access and use the site for personal purposes. Reproduction,
+        redistribution, modification, or commercial use of any content without
+        our express written permission is prohibited.
+      </p>
+    ),
+
+    use: (
+      <p>
+        You may use this website only for its intended purpose: learning about
+        our recovery services and engaging with us to recover a wallet you
+        legitimately own. You may not use the site to collect user data, engage
+        in fraudulent activity, attempt to reverse-engineer our software,
+        interfere with our systems, harass our staff, or use automated tools to
+        scrape or interact with the site. We reserve the right to terminate
+        access for any violation.
+      </p>
+    ),
+
+    feedback: (
+      <p>
+        Any information, feedback, or suggestions you submit to us (outside of
+        client engagement materials) may be used by us for any lawful purpose
+        without compensation to you. Materials submitted as part of your
+        recovery case are governed by our Privacy Policy and our service
+        agreement.
+      </p>
+    ),
+
+    thirdparty: (
+      <p>
+        Our website may contain links to third-party sites or services. We do
+        not endorse, control, or take responsibility for the content or
+        practices of any third-party websites. Following a third-party link is
+        at your own risk, and we recommend reviewing the privacy policy of any
+        external site before interacting with it.
+      </p>
+    ),
+
+    disclaimer: (
+      <p>
+        This website and its contents are provided on an 'as is' and 'as
+        available' basis. We make no warranties — express or implied — about the
+        accuracy, completeness, or fitness for a particular purpose of any
+        content on the site. We do not guarantee that the site will be
+        uninterrupted, error-free, or free of harmful components. Recovery
+        outcomes are not guaranteed; our 55% success rate reflects historical
+        performance only.
+      </p>
+    ),
+
+    liability: (
+      <p>
+        To the maximum extent permitted by applicable law,
+        CRYPTOASSETRECOVERY.COM, LLC and its officers, directors, employees, and
+        agents will not be liable for any indirect, incidental, consequential,
+        special, or punitive damages arising out of your use of the site or our
+        services. Our total liability to you for any claim will not exceed the
+        amount you paid to us in the six months prior to the claim arising.
+      </p>
+    ),
+
+    indemnification: (
+      <p>
+        You agree to indemnify and hold harmless CRYPTOASSETRECOVERY.COM, LLC
+        and its team from any claims, losses, damages, or expenses (including
+        reasonable legal fees) arising from your breach of these terms, your use
+        of the site in violation of applicable law, or any misrepresentation you
+        make in connection with our services.
+      </p>
+    ),
+
+    ads: (
+      <p>
+        We use advertising and analytics tools, including Meta Business Tools
+        such as the Meta Pixel and Conversions API. These tools may collect site
+        event data, technical browser data, and optionally hashed contact
+        identifiers for audience matching. We never transmit seed phrases,
+        private keys, wallet backups, password information, or other sensitive
+        client materials to any advertising partner. In the EEA and UK, we
+        activate non-essential advertising tools only with your explicit
+        consent. In the US, you may opt out of the sale or sharing of your data
+        for cross-context behavioral advertising via our Privacy Choices page.
+      </p>
+    ),
+
+    law: (
+      <p>
+        These terms are governed by the laws of the State of New Hampshire, USA.
+        Any legal dispute arising from your use of this site shall be brought
+        exclusively in the state or federal courts located in Strafford County,
+        New Hampshire. You consent to the jurisdiction and venue of those
+        courts.
+      </p>
+    ),
+
+    updates: (
+      <p>
+        We may update these terms at any time. The 'Last updated' date at the
+        top of this page reflects the most recent revision. Continued use of the
+        site after changes are posted constitutes your acceptance of the updated
+        terms. We recommend checking this page periodically.
+      </p>
+    ),
+
+    contact: (
+      <div className="space-y-4">
+        <p>
+          For questions about these Terms, please contact us using the details
+          below.
+        </p>
+
+        <div className="flex items-start gap-3">
+          <FaEnvelope className="text-blue-500 mt-1" />
+          <span>info@cryptoassetrecovery.com</span>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <FaMapMarkerAlt className="text-red-500 mt-1" />
+          <span>
+            CRYPTOASSETRECOVERY.COM, LLC
+            <br />
+            5 Ross Rd.
+            <br />
+            Durham, NH 03824
+            <br />
+            United States
+          </span>
+        </div>
+      </div>
+    ),
+  };
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -162,7 +278,9 @@ function TermsConditions() {
 
             <p className="text-gray-600 dark:text-gray-400 text-lg">
               Last updated:{" "}
-              <span className="font-semibold">September 25, 2025</span>
+              <span className="font-semibold">
+                September 25, 2025 — CRYPTOASSETRECOVERY.COM, LLC
+              </span>
             </p>
           </div>
         </div>
@@ -248,74 +366,9 @@ function TermsConditions() {
                   </div>
 
                   {/* Section Content */}
+                  {/* Section Content */}
                   <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
-                    {section.isList ? (
-                      <ul className="space-y-3">
-                        {section.content.map((item, itemIdx) => (
-                          <li key={itemIdx} className="flex items-start gap-3">
-                            <div className="w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                              <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                            </div>
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : section.isContact ? (
-                      <div className="grid md:grid-cols-2 gap-4">
-                        {section.content.map((item, itemIdx) => {
-                          if (item.includes("Email")) {
-                            return (
-                              <div
-                                key={itemIdx}
-                                className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl"
-                              >
-                                <FaEnvelope className="text-blue-500" />
-                                <span>{item.replace("Email: ", "")}</span>
-                              </div>
-                            );
-                          } else if (item.includes("Phone")) {
-                            return (
-                              <div
-                                key={itemIdx}
-                                className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl"
-                              >
-                                <FaPhone className="text-green-500" />
-                                <span>{item.replace("Phone: ", "")}</span>
-                              </div>
-                            );
-                          } else if (
-                            item.includes("Rd") ||
-                            item.includes("NH")
-                          ) {
-                            return (
-                              <div
-                                key={itemIdx}
-                                className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl"
-                              >
-                                <FaMapMarkerAlt className="text-red-500" />
-                                <span>{item}</span>
-                              </div>
-                            );
-                          } else if (item.includes("LLC")) {
-                            return (
-                              <div
-                                key={itemIdx}
-                                className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl"
-                              >
-                                <FaRegBuilding className="text-purple-500" />
-                                <span>{item}</span>
-                              </div>
-                            );
-                          } else {
-                            return <p key={itemIdx}>{item}</p>;
-                          }
-                        })}
-                      </div>
-                    ) : (
-                      section.content.map((item, itemIdx) => (
-                        <p key={itemIdx}>{item}</p>
-                      ))
-                    )}
+                    {content[section.id]}
                   </div>
 
                   {/* Decorative Line */}

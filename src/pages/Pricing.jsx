@@ -61,19 +61,19 @@ function Pricing() {
   const pricingFaqs = [
     {
       q: "How is the fee calculated?",
-      a: "The 20% fee applies to the total value of all liquid assets inside the wallet at the time of recovery. We use real-time market prices to determine the value. For wallets with multiple cryptocurrencies, the fee is calculated across all assets combined.",
-    },
-    {
-      q: "How is the payment actually processed?",
-      a: "Once we successfully crack the password, we withdraw our fee directly from the wallet using a smart contract or transaction. You don't need to send us any payment - we take our cut and you get immediate access to the remaining 80%.",
+      a: "The 20% applies to the total value of all liquid assets inside the wallet at the time of recovery. This includes tokens across all blockchains — Ethereum, Bitcoin, and others — as well as stablecoins.",
     },
     {
       q: "What if my wallet turns out to be empty?",
-      a: "Before we begin any heavy computational work, we verify the public address on the blockchain. If the wallet has no funds, we'll let you know immediately with no charge. We never charge for empty wallets.",
+      a: "Before we begin any computationally intensive work, we verify the wallet's public address on the blockchain to confirm there are funds present. If the wallet is empty, we tell you immediately and there is no charge whatsoever.",
     },
     {
       q: "Can I pay a flat fee instead of a percentage?",
-      a: "No. The 20% model ensures our incentives are perfectly aligned with yours - we only succeed when you succeed. This motivates our team to dedicate maximum resources to your recovery case.",
+      a: "No, and here's why we don't offer that: the percentage model ensures our incentives are completely aligned with yours. We only profit when you profit. A flat fee would give us reason to take your money and put in minimal effort. The 20% model keeps us motivated to dedicate serious computing resources to your case.",
+    },
+    {
+      q: "How is payment actually processed?",
+      a: "Once we successfully recover access, we withdraw our 20% fee directly from the wallet on the blockchain. We then return the wallet credentials to you and advise you to transfer your remaining funds to a new, secure wallet immediately. We never take custody of your share.",
     },
   ];
 
@@ -81,19 +81,19 @@ function Pricing() {
     {
       icon: <FaCheck className="text-blue-600 text-2xl" />,
       title: "Zero Upfront Cost",
-      desc: "Running industrial-grade brute force servers costs thousands in electricity and hardware. We absorb these costs entirely.",
+      desc: "We take on the full financial risk. We pay for the electricity, the hardware wear, and the engineering hours. You never write us a check before we succeed.Running industrial-grade brute force servers costs thousands in electricity and hardware. We absorb these costs entirely.",
       delay: 0,
     },
     {
       icon: <FaArrowDown className="text-blue-600 text-2xl" />,
-      title: "Fee Extraction",
-      desc: "We don't transmit your funds. We simply withdraw our 20% fee from the wallet and securely hand the credentials back to you.",
+      title: "On-Chain Fee Collection",
+      desc: "We don't transfer your funds or take custody of your assets. When recovery is successful, we withdraw our 20% fee directly from the wallet on-chain, then securely hand the wallet credentials back to you. At that point, we strongly recommend you immediately move the remaining 80% to a new, secure wallet that you set up fresh.",
       delay: 100,
     },
     {
       icon: <FaShieldAlt className="text-blue-600 text-2xl" />,
-      title: "Risk-Free Guarantee",
-      desc: "If our algorithms cannot find your password, we close the case and delete your data. You owe us absolutely nothing.",
+      title: "If We Can't Recover Your Wallet",
+      desc: "We close the case and permanently delete all data associated with your wallet. You owe us nothing — not for the server time, not for the engineering effort, not for anything. This isn't a promotional policy; it's how the business model works.",
       delay: 200,
     },
   ];
@@ -126,16 +126,18 @@ function Pricing() {
               We only get paid
             </span>
             <br />
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_200%] inline-block">
+            <span className="text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_200%] inline-block">
               when you get paid.
             </span>
           </h1>
 
           {/* Animated Paragraph */}
-          <p className="animate-fadeInUp animation-delay-400 text-gray-600 dark:text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed mt-6">
-            We assume 100% of the financial risk. We cover the electricity,
-            hardware, and engineering costs required to crack your password. If
-            we fail, you owe us absolutely nothing.
+          <p className="animate-fadeInUp animation-delay-400 text-gray-600 dark:text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed mt-8">
+            Running industrial-grade brute-force servers is expensive. The
+            electricity, hardware wear, and engineering time cost us thousands
+            of dollars per case. We absorb every cent of that cost upfront. If
+            we fail, you owe us nothing — not a dollar, not a consultation fee,
+            not a processing charge.
           </p>
 
           {/* Animated Scroll Indicator */}
@@ -184,8 +186,7 @@ function Pricing() {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed animate-fadeIn">
-                  We return the wallet to you with the majority of funds intact.
-                  You are responsible for moving them to a new secure location.
+                  We return the wallet with the majority of funds fully intact.
                 </p>
               </div>
             </div>
@@ -213,17 +214,17 @@ function Pricing() {
                 </h2>
 
                 <p className="text-white/90 text-lg leading-relaxed animate-fadeIn animation-delay-200">
-                  Calculated based on the total liquid assets in the wallet. We
-                  withdraw this fee directly before returning the wallet to you.
+                  Calculated on total liquid assets. Collected directly before
+                  wallet handover.
                 </p>
               </div>
             </div>
           </div>
 
           <p className="text-center text-gray-500 dark:text-gray-500 text-sm mt-8 animate-fadeInUp animation-delay-600">
-            *For extremely complex cases involving smart contracts or custom
-            exploits, fees may vary. We will always agree on the fee in writing
-            before starting.
+            For highly complex cases involving smart contracts or custom
+            exploits, fees may vary. We will always agree on the fee structure
+            in writing before starting any work.
           </p>
         </div>
       </section>
@@ -233,7 +234,7 @@ function Pricing() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              Why choose our pricing model?
+              How the Fee Structure Works in Practice
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-xl max-w-2xl mx-auto">
               Transparent, fair, and aligned with your success

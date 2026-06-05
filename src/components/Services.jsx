@@ -1,9 +1,9 @@
 function Services() {
   const stats = [
-    { value: "Est. 2017", label: "Years of Excellence" },
-    { value: "100+", label: "Publications" },
-    { value: "98%", label: "Success Rate" },
-    { value: "$2.1B+", label: "Recovered" },
+    { value: "Est. 2017", label: "In Business" },
+    { value: "55%", label: "Success Rate" },
+    { value: "$245B+", label: "Locked Crypto Market" },
+    { value: "100+", label: "Media Features" },
   ];
 
   const features = [
@@ -94,17 +94,19 @@ function Services() {
               </div>
 
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Your wallet stays
+                Your Wallet Stays Completely
                 <br />
                 <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  completely offline
+                  Offline During Recovery
                 </span>
               </h2>
 
               <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-                We never connect your wallet to the internet. Our secure,
-                isolated systems protect your crypto while we work to restore
-                your access.
+                We never connect your wallet to the internet — not even briefly.
+                Every recovery attempt happens on air-gapped machines that are
+                physically isolated from any network. This isn't just a policy;
+                it's baked into how our infrastructure is built. Your crypto and
+                your credentials remain completely secure while we work.
               </p>
 
               {/* CTA inside banner */}

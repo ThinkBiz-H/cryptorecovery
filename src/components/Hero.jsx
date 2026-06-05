@@ -23,22 +23,25 @@ function Hero() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight mb-8">
               <span className="text-gray-900 dark:text-white">
-                Get back into
+                We Help You Get Back
               </span>
-              <br />
-              <span className="text-gray-900 dark:text-white">your</span>
+              {/* <br />
+              <span className="text-gray-900 dark:text-white"></span> */}
               <br />
               <span className="text-blue-600 dark:text-blue-500">
-                crypto wallet
+                Into Your Crypto Wallet
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-gray-600 dark:text-gray-400 text-xl leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
-              Forgot password? Lost recovery phrase? We've helped thousands
-              recover their crypto using secure offline technology.
+              Locked out of your crypto wallet? You're not the first — and you
+              won't be the last. Forgotten passwords and misplaced recovery
+              phrases are far more common than people admit. Since 2017, we've
+              helped thousands of people regain access to their digital assets
+              using secure, completely offline recovery technology.
             </p>
 
             {/* CTA Buttons */}

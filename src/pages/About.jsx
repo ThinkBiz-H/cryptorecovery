@@ -49,7 +49,7 @@ function About() {
       const timer = setInterval(() => {
         step++;
         setCounters({
-          success: Math.min(Math.floor((step / steps) * 98), 98),
+          success: Math.min(Math.floor((step / steps) * 55), 55),
           founded: Math.min(Math.floor((step / steps) * 2017), 2017),
           media: Math.min(Math.floor((step / steps) * 100), 100),
         });
@@ -63,27 +63,27 @@ function About() {
 
   const timeline = [
     {
-      year: "'17",
+      year: "'2017",
       title: "The Beginning",
-      desc: "Chris founds CAR after helping friends recover lost Bitcoin.",
+      desc: "Chris founds Crypto Asset Recovery after helping friends recover lost Bitcoin. The first recovery algorithms are written in a home office in New Hampshire. The founding principle: do this transparently, or don't do it at all.",
       color: "blue",
     },
     {
-      year: "'19",
+      year: "'2019",
       title: "Public Recognition",
-      desc: "Media coverage begins. BBC, Forbes, and VICE feature the company.",
+      desc: "Media coverage begins in earnest. BBC, Forbes, and VICE feature the company's approach — specifically calling out the transparency that separates CAR from every other operation in the space.",
       color: "blue",
     },
     {
-      year: "'21",
+      year: "'2021",
       title: "Next Generation",
-      desc: "Charles joins as CTO and expands infrastructure for Ethereum wallets.",
+      desc: "Charles joins as CTO. The infrastructure expands significantly, adding support for Ethereum, smart contract wallets, and more complex recovery scenarios.",
       color: "blue",
     },
     {
-      year: "'26",
+      year: "'2026",
       title: "Industry Leaders",
-      desc: "98% success rate. Millions recovered. Still the only fully public team.",
+      desc: "A 55% success rate. Millions of dollars recovered for real people. Still the only fully public founding team in the crypto recovery industry.",
       color: "purple",
     },
   ];
@@ -92,19 +92,19 @@ function About() {
     {
       number: "01",
       title: "We show our faces",
-      desc: "Most recovery services hide behind anonymous handles. We put our names, photos, and reputation on the line.",
+      desc: "We show our faces. Most recovery services operate through anonymous handles and generic email addresses. We put our names, our photographs, and our professional reputations on the line with every single case we take.",
       icon: <FaUserTie className="text-blue-500 text-2xl" />,
     },
     {
       number: "02",
       title: "Air-gapped security",
-      desc: "We never connect your wallet to the internet. Our isolated systems keep your crypto fully secure during recovery.",
+      desc: "We use air-gapped infrastructure. Your wallet is never connected to the internet during recovery. Our isolated systems make remote access physically impossible — your crypto is protected by design, not just by policy.",
       icon: <FaShieldAlt className="text-blue-500 text-2xl" />,
     },
     {
       number: "03",
       title: "Shared incentives",
-      desc: "No recovery, no fee. Our incentives are perfectly aligned with yours — we succeed together or not at all.",
+      desc: "  We only win when you win. We charge no upfront fees. Our 20% success fee means our incentives are perfectly aligned with yours. We have every reason to work hard on your case and no reason to overpromise.",
       icon: <FaChartLine className="text-blue-500 text-2xl" />,
     },
   ];
@@ -132,23 +132,28 @@ function About() {
 
           <h1 className="animate-fadeInUp animation-delay-200">
             <span className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-gray-900 dark:text-white inline-block">
-              The only crypto recovery
+              The Only Crypto Recovery Team Willing to Show Their Faces
             </span>
             <br />
-            <span className="text-gray-900 dark:text-white">
-              team willing to
-            </span>
-            <br />
+
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_200%] inline-block">
               show their faces.
             </span>
           </h1>
 
           <p className="animate-fadeInUp animation-delay-400 text-gray-600 dark:text-gray-400 text-xl max-w-4xl mx-auto leading-relaxed mt-6">
-            In an industry plagued by anonymity and scams, we built our business
-            on something radical: accountability. We are a father-son team from
-            New Hampshire, and we've been helping people recover locked crypto
-            since 2017.
+            Anonymity is the default in this industry. Most crypto recovery
+            services operate behind pseudonyms, faceless websites, and vague
+            business descriptions. We built our company around the opposite
+            principle: radical accountability.
+          </p>
+          <p className="animate-fadeInUp animation-delay-400 text-gray-600 dark:text-gray-400 text-xl max-w-4xl mx-auto leading-relaxed mt-6">
+            Crypto Asset Recovery is a family business founded in 2017 by Chris
+            Brooks and his son Charles Brooks. We're based in New Hampshire,
+            we're incorporated as an LLC with a physical address, and we've
+            never hidden who we are. In an industry where scams are rampant,
+            that transparency isn't just a nice touch — it's the foundation
+            everything else is built on.
           </p>
         </div>
       </section>
@@ -217,16 +222,21 @@ function About() {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                Chris spent decades building secure technology systems for
-                institutions like Fidelity and Carescout. He founded Crypto
-                Asset Recovery in 2017 after experiencing a locked wallet
-                firsthand and realizing thousands faced the same problem with no
-                legitimate help.
+                Chris spent decades designing and managing secure technology
+                systems for major institutions, including Fidelity and
+                Carescout. He wasn't just theorizing about digital security — he
+                was building it, at scale, for organizations that couldn't
+                afford to get it wrong.
               </p>
 
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Today he oversees security protocols and client relations,
-                ensuring every recovery meets enterprise-grade standards.
+                In 2017, Chris experienced firsthand what it feels like to be
+                locked out of a crypto wallet. He looked around for a
+                legitimate, trustworthy recovery service and found nothing that
+                met his standards. So he built one himself. Today, Chris
+                oversees all security protocols and client communications,
+                ensuring every case is handled with the same rigor he applied
+                throughout his enterprise career.
               </p>
 
               {/* Hover Effect */}
@@ -249,15 +259,19 @@ function About() {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                A Computer Science student from the University of Vermont,
-                Charles joined his father in 2021 to scale technical operations.
-                He engineers the brute-force algorithms and manages the
-                air-gapped server infrastructure.
+                Charles is a Computer Science graduate from the University of
+                Vermont who joined Crypto Asset Recovery in 2021 to take the
+                technical operation to the next level. Where Chris brought
+                industry expertise and institutional credibility, Charles
+                brought engineering depth and a focus on optimization.
               </p>
 
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                His focus: optimizing search patterns to crack complex passwords
-                that standard tools can't break.
+                Charles engineers the brute-force algorithms and manages the
+                air-gapped server infrastructure. His primary focus is designing
+                smarter search patterns — approaches that can crack complex,
+                unusual passwords that conventional tools simply cannot handle.
+                He's the reason our success rate keeps improving.
               </p>
 
               {/* Hover Effect */}
@@ -311,7 +325,7 @@ function About() {
               <div className="flex items-center justify-center gap-2">
                 <FaNewspaper className="text-blue-300 text-sm" />
                 <p className="uppercase text-blue-200 tracking-wider text-sm font-semibold">
-                  Media Features
+                  Press Features
                 </p>
               </div>
             </div>

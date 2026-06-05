@@ -15,23 +15,23 @@ function Testimonials() {
   const faq = [
     {
       q: "Is my information safe with you?",
-      a: "Absolutely. All wallet recovery happens on computers that are completely disconnected from the internet—no one can access them remotely. Your information is encrypted and secure. We never ask for your full password, and you decide what details to share with us. Your security is our top priority.",
+      a: "Absolutely. Recovery work happens on computers that are permanently disconnected from the internet — remote access is physically impossible. Your data is encrypted, and we never ask for your complete password. You control what you share with us at every stage.",
     },
     {
       q: "What are my chances of getting my wallet back?",
-      a: "Success depends on the wallet type and the information available, but we successfully recover many wallets every year. Our overall success rate is 98% across all wallet types.",
-    },
-    {
-      q: "Which wallets can you help with?",
-      a: "We support Bitcoin Core, MetaMask, Trust Wallet, Blockchain.com, Ledger, Trezor, Electrum, Exodus, and 500+ other wallets. If you don't see yours, just ask!",
+      a: "We've successfully recovered access for more than 55% of the wallets we've worked on. Timelines vary based on password complexity — some wallets are recovered in hours, others take weeks or months. Most clients receive an initial update within the first week. Even in difficult cases, we continue developing and applying new techniques over time.",
     },
     {
       q: "How much does this cost?",
-      a: "We typically work on a 'no recovery, no fee' basis. You only pay if we successfully recover your wallet. Pricing depends on the complexity of your case.",
+      a: "Nothing upfront. Our fee is 20% of the wallet's value, and we only collect it if recovery is successful. We work on every case regardless of wallet size — whether there's $500 inside or $500,000. Most recovery services cherry-pick only large wallets; we believe everyone deserves help.",
     },
+    // {
+    //   q: "How much does this cost?",
+    //   a: "We typically work on a 'no recovery, no fee' basis. You only pay if we successfully recover your wallet. Pricing depends on the complexity of your case.",
+    // },
     {
       q: "How do I know you're legitimate?",
-      a: "We are publicly identified founders with media coverage in BBC, Forbes, VICE, and The Block. We have 8+ years of experience and thousands of satisfied clients.",
+      a: "We're a registered family business in New Hampshire run by Chris and Charles Brooks. Unlike every other recovery service out there, we operate under our real names and appear publicly in major media. We've been covered by the BBC, Forbes, VICE, CoinTelegraph, The Boston Globe, and many others. We're verifiable. That's the point.",
     },
     {
       q: "How long will it take?",

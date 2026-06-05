@@ -26,35 +26,235 @@ function PrivacyPolicy() {
 
   const sections = [
     {
-      id: "what",
-      title: "What Information Do We Collect?",
+      id: "collect",
+      title: "What Information We Collect",
       icon: <FaDatabase />,
     },
+    { id: "use", title: "How We Use Your Information", icon: <FaChartLine /> },
+    { id: "legal", title: "Legal Basis for Processing", icon: <FaGavel /> },
     {
-      id: "how",
-      title: "How Do We Process Your Information?",
-      icon: <FaChartLine />,
+      id: "share",
+      title: "Who We Share Your Information With",
+      icon: <FaUsers />,
     },
-    { id: "legal", title: "Legal Bases for Processing", icon: <FaGavel /> },
-    { id: "share", title: "When Do We Share Information?", icon: <FaUsers /> },
     {
-      id: "retention",
-      title: "How Long Do We Keep Data?",
+      id: "keep",
+      title: "How Long We Keep Your Information",
       icon: <FaCalendarAlt />,
     },
-    { id: "security", title: "How Do We Keep Data Safe?", icon: <FaLock /> },
     {
-      id: "minors",
-      title: "Do We Collect from Minors?",
-      icon: <FaUserSecret />,
+      id: "safe",
+      title: "How We Keep Your Information Safe",
+      icon: <FaLock />,
     },
+    { id: "ads", title: "Advertising and Analytics", icon: <FaGlobe /> },
     { id: "rights", title: "Your Privacy Rights", icon: <FaShieldAlt /> },
-    { id: "cookies", title: "Do-Not-Track Features", icon: <FaCookie /> },
-    { id: "california", title: "California Privacy Rights", icon: <FaGlobe /> },
-    { id: "updates", title: "Updates to This Notice", icon: <FaFileAlt /> },
-    { id: "contact", title: "How to Contact Us", icon: <FaEnvelope /> },
+    { id: "minors", title: "Minors", icon: <FaUserSecret /> },
+    { id: "dnt", title: "Do-Not-Track Signals", icon: <FaCookie /> },
+    { id: "updates", title: "Updates to This Policy", icon: <FaFileAlt /> },
+    { id: "contact", title: "Contact Us", icon: <FaEnvelope /> },
   ];
+  const content = {
+    collect: (
+      <>
+        <p>
+          Information you provide directly: When you contact us or engage our
+          services, we may collect your name, email address, phone number, and
+          the technical details you share about your wallet situation (such as
+          your wallet type and any password hints). We also collect financial
+          data necessary to verify and complete a recovery.
+        </p>
 
+        <p>
+          Information collected automatically: When you visit our website, we
+          automatically collect standard technical data including your IP
+          address, browser type, device type, operating system, pages visited,
+          and timestamps. This data is used for security, analytics, and website
+          performance — not for profiling or targeted advertising beyond what is
+          disclosed in this policy.
+        </p>
+
+        <p>
+          We do not purchase or import data about you from third-party data
+          brokers.
+        </p>
+      </>
+    ),
+
+    use: (
+      <>
+        <p>
+          We use your information to respond to your inquiries, assess and
+          perform wallet recovery services, communicate with you about your
+          case, maintain the security and integrity of our systems, and improve
+          our website and services. We may also use your email address to send
+          relevant updates about your case and, with your permission, occasional
+          service-related communications. You can opt out of non-essential
+          communications at any time.
+        </p>
+      </>
+    ),
+
+    legal: (
+      <>
+        <p>
+          If you are located in the European Economic Area or United Kingdom, we
+          process your personal information under the following legal bases: (a)
+          your consent, where given; (b) performance of a contract, where you
+          have engaged our services; (c) our legitimate business interests,
+          where these do not override your fundamental rights; and (d)
+          compliance with legal obligations. You may withdraw consent at any
+          time by contacting us.
+        </p>
+      </>
+    ),
+
+    share: (
+      <>
+        <p>
+          We share your information only with the service providers necessary to
+          operate our website: Google Analytics (web analytics), Cloudflare
+          (website hosting and performance monitoring). We do not share client
+          recovery materials — wallet files, password details, seed phrase
+          fragments — with any third party under any circumstances. We may
+          disclose information if required by law, court order, or to protect
+          our legal rights.
+        </p>
+      </>
+    ),
+
+    keep: (
+      <p>
+        We retain your personal information for no longer than two years, or as
+        long as necessary to fulfill the purposes outlined in this policy. When
+        your case is closed and all business requirements are met, we securely
+        delete your information. Client recovery materials are permanently
+        deleted upon case closure.
+      </p>
+    ),
+
+    safe: (
+      <p>
+        Recovery work is performed on air-gapped servers — machines that are
+        permanently disconnected from the internet. Client wallet files and
+        recovery details are encrypted at rest. We do not transmit sensitive
+        client materials over the internet. We apply organizational and
+        technical security measures consistent with industry best practice. No
+        system is 100% impenetrable, but our infrastructure is specifically
+        designed to minimize exposure of your most sensitive information.
+      </p>
+    ),
+
+    ads: (
+      <p>
+        We use Meta Business Tools (including Meta Pixel and Conversions API)
+        for advertising measurement and audience targeting. These tools may
+        collect page view events, technical browser data, and optionally hashed
+        contact identifiers (email or phone) for audience matching. We never
+        share seed phrases, private keys, wallet backups, password hints, or
+        other sensitive recovery materials with Meta or any advertising partner.
+        In the EEA and UK, we activate these tools only with your opt-in
+        consent. In the US, you may opt out of the sharing of your data for
+        cross-context behavioral advertising through our Privacy Choices page.
+        Meta may retain event data for up to two years under its own terms.
+      </p>
+    ),
+
+    rights: (
+      <>
+        {" "}
+        <p>
+          Depending on your location, you may have the right to access the
+          personal data we hold about you, request correction or deletion of
+          that data, restrict or object to our processing, and request data
+          portability. To exercise any of these rights, contact us at
+          info@cryptoassetrecovery.com or visit cryptoassetrecovery.com/contact.
+        </p>
+        <p>
+          California residents have additional rights under the CCPA/CPRA,
+          including the right to know what personal information we collect and
+          share, the right to deletion, and the right to opt out of the sale or
+          sharing of your data for advertising purposes. We do not sell personal
+          data. We have not sold personal information to any third party in the
+          preceding 12 months.
+        </p>
+        <p>
+          EEA and UK residents may lodge a complaint with their local data
+          protection supervisory authority if they believe we are processing
+          their data unlawfully.
+        </p>
+      </>
+    ),
+
+    minors: (
+      <p>
+        Our services are not directed at individuals under 18 years of age. We
+        do not knowingly collect personal information from minors. If we
+        discover we have inadvertently collected data from someone under 18, we
+        will promptly delete it. Please contact us at
+        info@cryptoassetrecovery.com if you believe this has occurred.
+      </p>
+    ),
+
+    dnt: (
+      <p>
+        At this time, we do not respond to browser-level Do-Not-Track signals,
+        as no uniform standard for these signals has been established. We do
+        honor Global Privacy Control (GPC) opt-out signals where required by
+        applicable law
+      </p>
+    ),
+
+    updates: (
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes
+        in our practices or applicable law. The 'Last updated' date at the top
+        of this page reflects the most recent revision. We encourage you to
+        review this policy periodically. Material changes will be communicated
+        via the website.
+      </p>
+    ),
+
+    contact: (
+      <div className="space-y-4">
+        <p>
+          For privacy-related questions, requests, or complaints, please contact
+          us using the details below. We will respond to all requests within a
+          reasonable timeframe in accordance with applicable data protection
+          law.
+        </p>
+
+        <div className="flex items-start gap-3">
+          <FaEnvelope className="text-blue-500 mt-1" />
+          <div>
+            <p className="font-semibold">Email</p>
+            <p>info@cryptoassetrecovery.com</p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <FaMapMarkerAlt className="text-red-500 mt-1" />
+          <div>
+            <p className="font-semibold">Mailing Address</p>
+            <p>
+              CRYPTOASSETRECOVERY.COM, LLC
+              <br />
+              5 Ross Rd.
+              <br />
+              Durham, NH 03824
+              <br />
+              United States
+            </p>
+          </div>
+        </div>
+
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          We will respond to all requests within a reasonable timeframe in
+          accordance with applicable data protection law.
+        </p>
+      </div>
+    ),
+  };
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -107,8 +307,7 @@ function PrivacyPolicy() {
           </h1>
 
           <p className="text-gray-600 dark:text-gray-400 text-lg animate-fadeInUp animation-delay-400">
-            Last updated:{" "}
-            <span className="font-semibold">September 25, 2025</span>
+            Last updated: September 25, 2025 — CRYPTOASSETRECOVERY.COM, LLC
           </p>
         </div>
       </section>
@@ -180,15 +379,12 @@ function PrivacyPolicy() {
                   </h2>
                 </div>
 
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  This privacy notice for{" "}
-                  <span className="font-semibold">
-                    CRYPTOASSETRECOVERY.COM, LLC
-                  </span>{" "}
-                  ("Company," "we," "us," or "our"), describes how and why we
-                  might collect, store, use, and/or share ("process") your
-                  information when you use our services ("Services"), such as
-                  when you:
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  This Privacy Policy explains how CRYPTOASSETRECOVERY.COM, LLC
+                  collects, uses, and protects your personal information when
+                  you visit our website or engage our services. We take your
+                  privacy seriously, especially given the sensitive nature of
+                  cryptocurrency recovery services.
                 </p>
 
                 <ul className="list-disc pl-6 text-gray-700 dark:text-gray-300 leading-relaxed space-y-2 mb-6">
@@ -240,6 +436,7 @@ function PrivacyPolicy() {
               </div>
 
               {/* Dynamic Sections */}
+              {/* Dynamic Sections */}
               {sections.map((section, idx) => (
                 <div
                   key={idx}
@@ -262,172 +459,14 @@ function PrivacyPolicy() {
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 flex items-center justify-center text-xl">
                       {section.icon}
                     </div>
+
                     <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
                       {section.title}
                     </h3>
                   </div>
 
                   <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
-                    {section.id === "what" && (
-                      <>
-                        <p>
-                          We collect personal information that you voluntarily
-                          provide to us when you express an interest in
-                          obtaining information about us or our products and
-                          Services.
-                        </p>
-                        <p>
-                          The personal information we collect may include email
-                          addresses, names, phone numbers, usernames, passwords,
-                          and contact or authentication data.
-                        </p>
-                        <p>
-                          We automatically collect certain information when you
-                          visit, use, or navigate the Services including IP
-                          address, browser characteristics, operating system,
-                          language preferences, referring URLs, and technical
-                          information.
-                        </p>
-                      </>
-                    )}
-
-                    {section.id === "how" && (
-                      <ul className="list-disc pl-6 space-y-2">
-                        <li>
-                          To respond to user inquiries and support requests.
-                        </li>
-                        <li>To fulfill and manage your orders.</li>
-                        <li>To request feedback.</li>
-                        <li>To send marketing communications.</li>
-                        <li>To protect our Services and prevent fraud.</li>
-                        <li>To identify usage trends.</li>
-                      </ul>
-                    )}
-
-                    {section.id === "legal" && (
-                      <ul className="list-disc pl-6 space-y-2">
-                        <li>Consent</li>
-                        <li>Performance of a Contract</li>
-                        <li>Legitimate Interests</li>
-                        <li>Legal Obligations</li>
-                        <li>Vital Interests</li>
-                      </ul>
-                    )}
-
-                    {section.id === "share" && (
-                      <>
-                        <p>
-                          We may share your data with third-party vendors and
-                          service providers who perform services for us.
-                        </p>
-                        <ul className="list-disc pl-6 space-y-1">
-                          <li>Google Analytics</li>
-                          <li>Cloudflare Hosting</li>
-                          <li>Website Performance Monitoring</li>
-                        </ul>
-                      </>
-                    )}
-
-                    {section.id === "retention" && (
-                      <p>
-                        We keep your information only as long as necessary to
-                        fulfill the purposes outlined in this notice unless
-                        otherwise required by law.
-                      </p>
-                    )}
-
-                    {section.id === "security" && (
-                      <p>
-                        We implement technical and organizational security
-                        measures to protect your personal information, including
-                        air-gapped servers and enterprise-grade encryption.
-                      </p>
-                    )}
-
-                    {section.id === "minors" && (
-                      <p>
-                        We do not knowingly collect data from children under 18
-                        years of age.
-                      </p>
-                    )}
-
-                    {section.id === "rights" && (
-                      <p>
-                        Depending on your location, you may have rights
-                        regarding access, correction, deletion, or restriction
-                        of your personal data.
-                      </p>
-                    )}
-
-                    {section.id === "cookies" && (
-                      <p>
-                        We currently do not respond to Do-Not-Track browser
-                        signals.
-                      </p>
-                    )}
-
-                    {section.id === "california" && (
-                      <div className="overflow-x-auto">
-                        <table className="w-full border border-gray-300 dark:border-gray-700 text-left text-sm">
-                          <thead className="bg-gray-100 dark:bg-gray-800">
-                            <tr>
-                              <th className="p-3 border">Category</th>
-                              <th className="p-3 border">Examples</th>
-                              <th className="p-3 border">Collected</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td className="p-3 border">Identifiers</td>
-                              <td className="p-3 border">
-                                Name, email, IP address
-                              </td>
-                              <td className="p-3 border">YES</td>
-                            </tr>
-                            <tr>
-                              <td className="p-3 border">
-                                Protected classifications
-                              </td>
-                              <td className="p-3 border">
-                                Gender and date of birth
-                              </td>
-                              <td className="p-3 border">YES</td>
-                            </tr>
-                            <tr>
-                              <td className="p-3 border">Geolocation Data</td>
-                              <td className="p-3 border">Device location</td>
-                              <td className="p-3 border">YES</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    )}
-
-                    {section.id === "updates" && (
-                      <p>
-                        Yes, we may update this privacy notice from time to time
-                        to stay compliant with relevant laws.
-                      </p>
-                    )}
-
-                    {section.id === "contact" && (
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
-                          <FaEnvelope className="text-blue-500" />
-                          <span>info@cryptoassetrecovery.com</span>
-                        </div>
-                        <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
-                          <FaPhone className="text-green-500" />
-                          <span>(970) 633-0680</span>
-                        </div>
-                        <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl col-span-2">
-                          <FaMapMarkerAlt className="text-red-500" />
-                          <span>
-                            5 Ross Rd., Durham, NH 03824, United States
-                          </span>
-                        </div>
-                      </div>
-                    )}
+                    {content[section.id]}
                   </div>
 
                   <div className="mt-6 pt-4">

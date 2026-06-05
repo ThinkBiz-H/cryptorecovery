@@ -160,17 +160,21 @@ function Testimonials() {
 
           <h1 className="animate-fadeInUp animation-delay-200">
             <span className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-gray-900 dark:text-white inline-block">
-              Don't just take our
+              Real People.
             </span>
             <br />
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_200%] inline-block">
-              word for it.
+            <span className="text-5xl md:text-7xl lg:text-8xl bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_200%] inline-block">
+              Real Results.
             </span>
           </h1>
 
-          <p className="animate-fadeInUp animation-delay-400 text-gray-600 dark:text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed mt-6">
-            We have helped hundreds of people recover millions of dollars in
-            locked crypto. Read genuine, verified reviews from our clients.
+          <p className="animate-fadeInUp animation-delay-400 text-gray-600 dark:text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed mt-8">
+            We've helped hundreds of people recover millions of dollars in
+            locked cryptocurrency. These are genuine, verified accounts from
+            real clients — not fabricated endorsements. Their words reflect
+            experiences that span different wallets, different situations, and
+            different amounts, but share one common thread: they got their
+            crypto back.
           </p>
 
           {/* Stats Grid */}
