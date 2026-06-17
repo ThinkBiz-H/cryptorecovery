@@ -406,9 +406,13 @@ function Contact() {
                 name="recoveryType"
                 options={[
                   "Password Recovery",
+                  "Scam Tracing",
+                  "Hard Drive Recovery",
+                  "Cross-Chain Recovery",
                   "Seed Phrase Recovery",
                   "Wallet Access",
                   "Private Key Recovery",
+                  "Other",
                 ]}
                 icon={FaShieldAlt}
                 formData={formData}

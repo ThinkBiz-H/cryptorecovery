@@ -14,9 +14,9 @@ function Navbar() {
             <div className="absolute bottom-0 right-0 w-5 h-5 bg-orange-400 rounded-tl-full"></div>
           </div>
 
-          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 whitespace-nowrap">
+          <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 whitespace-nowrap">
             Crypto Asset Recovery
-          </h1>
+          </p>
         </Link>
 
         {/* Desktop Menu */}
