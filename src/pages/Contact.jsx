@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { db } from "../firebase";
+import { Link } from "react-router-dom";
 
 import { collection, addDoc } from "firebase/firestore";
 import {
@@ -424,14 +425,19 @@ function Contact() {
                   label="Wallet Type"
                   name="walletType"
                   options={[
-                    "MetaMask",
+                    "Coinbase Wallet",
+                    "Blockchain Wallet",
+                    "Uphold Wallet",
+                    "MetaMask Wallet",
+                    "Crypto.com Wallet",
+                    "Kraken Wallet",
+                    "Trezor Wallet",
+                    "Ledger Wallet",
                     "Trust Wallet",
-                    "Blockchain.com",
-                    "Bitcoin Core",
-                    "Ledger",
-                    "Trezor",
-                    "Exodus",
-                    "Electrum",
+                    "Onchain Wallet",
+                    "Phantom Wallet",
+                    "OKX Wallet",
+                    "Other Wallet",
                   ]}
                   icon={FaWallet}
                   formData={formData}
@@ -474,9 +480,12 @@ function Contact() {
                 />
                 <label className="text-gray-700 dark:text-gray-300 text-sm">
                   You agree to our{" "}
-                  <span className="text-blue-600 underline cursor-pointer hover:text-blue-700">
+                  <Link
+                    to="/privacy-policy"
+                    className="text-blue-600 underline cursor-pointer hover:text-blue-700"
+                  >
                     privacy policy
-                  </span>
+                  </Link>
                   .
                 </label>
               </div>

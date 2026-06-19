@@ -8,7 +8,7 @@ import {
   FaClock,
   FaUserShield,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function WhyChoose() {
   const wallets = [
     {
@@ -216,9 +216,12 @@ function WhyChoose() {
                   </p>
                 </div>
               </div>
-              <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300 whitespace-nowrap">
+              <Link
+                to="/contact"
+                className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300 whitespace-nowrap inline-block"
+              >
                 Get in touch →
-              </button>
+              </Link>
             </div>
           </div>
         </div>

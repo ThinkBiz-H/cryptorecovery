@@ -7,7 +7,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function sub() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-32 px-6">
@@ -49,13 +49,18 @@ function sub() {
         <div className="flex flex-col sm:flex-row gap-5 justify-center mb-12">
           <button className="group relative bg-gradient-to-r from-blue-500 via-blue-600 to-purple-600 text-white px-10 py-5 rounded-2xl font-bold text-xl overflow-hidden shadow-2xl shadow-blue-500/30 hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <span className="relative flex items-center gap-3">
-              Start Free Consultation
-              <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
-            </span>
+            <Link to="/contact" className="group">
+              <span className="relative flex items-center gap-3">
+                Start Free Consultation
+                <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
+              </span>
+            </Link>
           </button>
 
-          <button className="border-2 border-white/30 hover:border-white/60 bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3">
+          <Link
+            to="/about"
+            className="border-2 border-white/30 hover:border-white/60 bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3"
+          >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -76,7 +81,7 @@ function sub() {
               />
             </svg>
             Watch Demo Video
-          </button>
+          </Link>
         </div>
 
         {/* Trust Indicators */}
@@ -122,7 +127,9 @@ function sub() {
             </div>
             <div className="text-left">
               <p className="text-white/60 text-xs">Call us 24/7</p>
-              <p className="text-white font-medium">+1 (888) 123-4567</p>
+              <a href="tel:+18323043083">
+                <p className="text-white font-medium">+1 (832) 304-3083</p>
+              </a>
             </div>
           </div>
 

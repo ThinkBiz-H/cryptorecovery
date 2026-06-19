@@ -17,8 +17,9 @@ import {
   FaGavel,
   FaCalendarAlt,
   FaQuestionCircle,
+  FaFileContract,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function PrivacyPolicy() {
   const [activeSection, setActiveSection] = useState(0);
   const [isVisible, setIsVisible] = useState({});
@@ -228,7 +229,25 @@ function PrivacyPolicy() {
           <FaEnvelope className="text-blue-500 mt-1" />
           <div>
             <p className="font-semibold">Email</p>
-            <p>info@cryptoassetrecovery.com</p>
+            <a
+              href="mailto:info@cryptoassetrecovery.com"
+              className="hover:text-blue-500 transition"
+            >
+              info@cryptoassetrecovery.com
+            </a>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-3 mt-4">
+          <FaPhone className="text-blue-500 mt-1" />
+          <div>
+            <p className="font-semibold">Phone</p>
+            <a
+              href="tel:+18323043083"
+              className="hover:text-blue-500 transition"
+            >
+              +1 (832) 304-3083
+            </a>
           </div>
         </div>
 
@@ -362,6 +381,17 @@ function PrivacyPolicy() {
                 <p className="text-sm font-semibold">GDPR Compliant</p>
                 <p className="text-xs opacity-90">Your data is protected</p>
               </div>
+              <Link
+                to="/terms-conditions"
+                className="block p-5 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-xl text-white text-center shadow-lg hover:scale-105 transition-all duration-300"
+              >
+                <FaFileContract className="text-3xl mx-auto mb-3" />
+                <p className="text-base font-bold">Terms & Conditions</p>
+                <p className="text-sm opacity-90 mt-1">
+                  By accessing our website and services, you agree to our terms
+                  and policies.
+                </p>
+              </Link>
             </div>
           </div>
 
@@ -496,11 +526,14 @@ function PrivacyPolicy() {
 
             {/* Acceptance Button */}
             <div className="mt-8 text-center">
-              <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2">
+              <Link
+                to="/contact"
+                className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+              >
                 <FaCheckCircle className="text-lg" />
                 I Understand and Agree
                 <FaChevronRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
               <p className="text-xs text-gray-500 dark:text-gray-500 mt-4">
                 By continuing to use our services, you acknowledge this privacy
                 policy

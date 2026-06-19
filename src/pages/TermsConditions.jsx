@@ -14,8 +14,9 @@ import {
   FaDatabase,
   FaRegBuilding,
   FaCheckCircle,
+  FaUserShield,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function TermsConditions() {
   const [activeSection, setActiveSection] = useState(0);
   const [isVisible, setIsVisible] = useState({});
@@ -208,9 +209,29 @@ function TermsConditions() {
 
         <div className="flex items-start gap-3">
           <FaEnvelope className="text-blue-500 mt-1" />
-          <span>info@cryptoassetrecovery.com</span>
+          <div>
+            <p className="font-semibold">Email</p>
+            <a
+              href="mailto:info@cryptoassetrecovery.com"
+              className="hover:text-blue-500 transition"
+            >
+              info@cryptoassetrecovery.com
+            </a>
+          </div>
         </div>
 
+        <div className="flex items-start gap-3 mt-4">
+          <FaPhone className="text-blue-500 mt-1" />
+          <div>
+            <p className="font-semibold">Phone</p>
+            <a
+              href="tel:+18323043083"
+              className="hover:text-blue-500 transition"
+            >
+              +1 (832) 304-3083
+            </a>
+          </div>
+        </div>
         <div className="flex items-start gap-3">
           <FaMapMarkerAlt className="text-red-500 mt-1" />
           <span>
@@ -332,6 +353,16 @@ function TermsConditions() {
                 No hidden clauses · Clear terms
               </p>
             </div>
+            <Link
+              to="/privacy-policy"
+              className="block mt-4 p-6 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl text-white text-center hover:scale-105 transition-all duration-300"
+            >
+              <FaUserShield className="text-3xl mx-auto mb-3 opacity-80" />
+              <p className="text-sm font-semibold mb-1">Privacy Policy</p>
+              <p className="text-xs opacity-80">
+                Your privacy matters · Secure data handling
+              </p>
+            </Link>
           </div>
 
           {/* Main Content */}
@@ -401,11 +432,14 @@ function TermsConditions() {
 
             {/* Acceptance Button */}
             <div className="mt-8 text-center animate-fadeInUp animation-delay-800">
-              <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2">
+              <Link
+                to="/contact"
+                className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+              >
                 <FaCheckCircle className="text-lg" />
                 I Accept the Terms & Conditions
                 <FaChevronRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
               <p className="text-xs text-gray-500 dark:text-gray-500 mt-4">
                 By continuing to use our services, you agree to these terms
               </p>

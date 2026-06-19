@@ -242,7 +242,7 @@ function Footer() {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-6 mb-12">
+        {/* <div className="flex justify-center gap-6 mb-12">
           <a
             href="#"
             className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -261,7 +261,7 @@ function Footer() {
           >
             <FaGithub className="text-gray-400 hover:text-white text-lg" />
           </a>
-        </div>
+        </div> */}
 
         {/* Disclaimer Paragraphs - Modern Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-12 pt-8 border-t border-white/10">

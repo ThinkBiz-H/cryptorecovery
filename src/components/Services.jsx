@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Services() {
   const stats = [
     { value: "Est. 2017", label: "In Business" },
@@ -110,7 +111,10 @@ function Services() {
               </p>
 
               {/* CTA inside banner */}
-              <button className="mt-8 bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-2 group">
+              <Link
+                to="/about"
+                className="mt-8 bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-2 group"
+              >
                 Learn how it works
                 <svg
                   className="w-4 h-4 group-hover:translate-x-1 transition"
@@ -125,7 +129,7 @@ function Services() {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

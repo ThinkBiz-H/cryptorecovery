@@ -8,7 +8,7 @@ import {
   FaLock,
   FaShieldAlt,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function Testimonials() {
   const [open, setOpen] = useState(0);
 
@@ -175,14 +175,13 @@ function Testimonials() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2">
+              <Link
+                to="/contact"
+                className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
+              >
                 <FaHeadset />
                 Contact Support
-              </button>
-
-              <button className="border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 px-6 py-3 rounded-xl font-semibold transition-all duration-300">
-                View All FAQs →
-              </button>
+              </Link>
             </div>
 
             {/* Live Chat Badge */}
@@ -260,9 +259,12 @@ function Testimonials() {
           <p className="text-white/90 text-lg mb-6">
             Start your free consultation today. No recovery, no fee.
           </p>
-          <button className="bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <Link
+            to="/contact"
+            className="bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
             Get Started Now →
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -10,7 +10,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import Contact from "../components/sub";
-
+import { Link } from "react-router-dom";
 const reviews = [
   {
     title: "Lost Bitcoin Wallet Recovered After Years",
@@ -352,10 +352,13 @@ function Testimonials() {
                 Join thousands of satisfied clients who got their assets back
               </p>
 
-              <button className="group bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2">
+              <Link
+                to="/contact"
+                className="group bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+              >
                 Start Your Recovery
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
             </div>
 
             {/* Floating Particles */}

@@ -11,7 +11,7 @@ import {
   FaChartLine,
 } from "react-icons/fa";
 import Contact from "../components/sub";
-
+import { Link } from "react-router-dom";
 function About() {
   const [counters, setCounters] = useState({
     success: 0,
@@ -464,10 +464,13 @@ function About() {
                 Get your free consultation today. No recovery, no fee.
               </p>
 
-              <button className="group bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2">
+              <Link
+                to="/contact"
+                className="group bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+              >
                 Start Free Consultation
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
             </div>
 
             {/* Floating Particles */}
