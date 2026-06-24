@@ -213,13 +213,13 @@ function Footer() {
                 Registered LLC
               </p>
 
-              <div className="flex items-center gap-3">
-                <FaEnvelope className="text-blue-400 text-sm" />
+              <div className="flex items-center gap-2">
+                <FaEnvelope className="text-blue-400 text-sm flex-shrink-0" />
                 <a
-                  href="mailto:recovery@cryptoasset.com"
-                  className="text-gray-400 hover:text-white text-sm transition"
+                  href="mailto:gethelp@cryptoassetrecovery.org"
+                  className="text-gray-400 hover:text-white text-sm transition whitespace-nowrap"
                 >
-                  recovery@cryptoasset.com
+                  gethelp@cryptoassetrecovery.org
                 </a>
               </div>
 

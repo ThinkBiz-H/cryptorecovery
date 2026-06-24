@@ -1,7 +1,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../assets/logo1.svg";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -13,13 +13,13 @@ function Navbar() {
         <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 flex-1 min-w-0">
-            <div className="w-10 h-10 rounded-full bg-blue-600 relative overflow-hidden flex-shrink-0">
-              <div className="absolute bottom-0 right-0 w-5 h-5 bg-orange-400 rounded-tl-full"></div>
+            <div className="flex items-center h-15 sm:h-18 lg:h-18">
+              <img
+                src={logo}
+                alt="Crypto Asset Recovery"
+                className="h-full w-auto object-contain"
+              />
             </div>
-
-            <h1 className="font-bold text-base sm:text-lg lg:text-2xl text-gray-900 truncate">
-              Crypto Asset Recovery
-            </h1>
           </Link>
 
           {/* Desktop Menu */}

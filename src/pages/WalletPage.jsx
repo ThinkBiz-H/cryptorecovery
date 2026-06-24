@@ -145,9 +145,9 @@ export default function WalletPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900 overflow-hidden  bg-gray-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-6">
+      <section className="relative overflow-hidden py-20 px-6  bg-gray-900">
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-[100px] animate-pulse"></div>
@@ -155,7 +155,7 @@ export default function WalletPage() {
           <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-pink-400/5 rounded-full blur-[100px] animate-pulse animation-delay-4000"></div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto text-center">
+        <div className="relative max-w-6xl mx-auto text-center ">
           {/* Wallet Icon Badge */}
           <div
             className={`inline-flex items-center gap-3 bg-white dark:bg-gray-800/50 backdrop-blur-sm px-5 py-2.5 rounded-full mb-6 transition-all duration-500 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}

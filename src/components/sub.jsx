@@ -117,7 +117,9 @@ function sub() {
             </div>
             <div className="text-left">
               <p className="text-white/60 text-xs">Email us</p>
-              <p className="text-white font-medium">recovery@cryptoasset.com</p>
+              <p className="text-white font-medium">
+                gethelp@cryptoassetrecovery.org
+              </p>
             </div>
           </div>
 

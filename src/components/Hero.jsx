@@ -67,7 +67,7 @@ function Hero() {
                 </svg>
               </Link>
 
-              <button className="border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-500 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="border-2 group bg-gray-900 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-500 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2">
                 Watch demo
                 <svg
                   className="w-5 h-5"

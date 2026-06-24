@@ -115,7 +115,7 @@ function BlockchainPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-32 pb-20 px-6">
+      <section className="relative overflow-hidden pt-32 pb-20 px-6  bg-gray-900">
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-[100px] animate-pulse"></div>

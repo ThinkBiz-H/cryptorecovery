@@ -200,7 +200,7 @@ function Contact() {
         </div>
       )}
 
-      <div className="grid lg:grid-cols-2 min-h-screen">
+      <div className="grid lg:grid-cols-2 min-h-[calc(100vh-80px)]">
         {/* LEFT SIDE - Modern Dark Theme */}
         <div className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900 text-white px-8 md:px-14 py-20 flex flex-col justify-between">
           {/* Animated Background */}
@@ -278,8 +278,8 @@ function Contact() {
         </div>
 
         {/* RIGHT SIDE - Modern Form */}
-        <div className="bg-white dark:bg-gray-900 px-8 md:px-14 py-20 overflow-y-auto">
-          <div className="max-w-xl mx-auto">
+        <div className="bg-white dark:bg-gray-900 px-8 md:px-14 py-10 flex items-center justify-center min-h-[calc(100vh-80px)]">
+          <div className="max-w-xl mx-auto w-full">
             <div className="text-center mb-10  ">
               <div className="inline-flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-full mb-4">
                 <FaPaperPlane className="text-blue-500 text-sm" />

@@ -92,7 +92,7 @@ function Blog() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-6 border-b border-gray-200 dark:border-gray-800">
+      <section className="relative overflow-hidden py-20 px-6 border-b border-gray-200 dark:border-gray-800  bg-gray-900">
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-[100px] animate-pulse"></div>
@@ -125,7 +125,7 @@ function Blog() {
       </section>
 
       {/* Search and Filters */}
-      <section className="py-8 px-6 border-b border-gray-200 dark:border-gray-800">
+      <section className="py-8 px-6 border-b border-gray-200 dark:border-gray-800  bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
             {/* Search Bar */}
@@ -180,7 +180,7 @@ function Blog() {
       </section>
 
       {/* Blog Grid */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6  bg-gray-900">
         <div className="max-w-7xl mx-auto">
           {filteredPosts.length === 0 ? (
             <div className="text-center py-20">
@@ -316,7 +316,7 @@ function Blog() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6  bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-10 text-center relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
